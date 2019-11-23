@@ -2,10 +2,10 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create()
 const useref = require('gulp-useref')
-const uglify = require('gulp-uglify');
-const gulpIf = require('gulp-if')
-const cssnano = require('gulp-cssnano')
-const imagein = require('gulp-imagemin')
+const uglify = require("gulp-uglify-es").default;
+const gulpIf = require('gulp-if');
+const cssnano = require('gulp-cssnano');
+const imagein = require('gulp-imagemin');
 const cache = require('gulp-cache');
 
 gulp.task('sass', () => {
@@ -37,6 +37,7 @@ gulp.task('serve', gulp.series('sass', 'useref', () => {
   })
   gulp.watch('app/scss/**/*.scss', gulp.series('sass'))
   gulp.watch('app/*.html', gulp.series('useref', 'images')).on('change', browserSync.reload)
+  gulp.watch('app/js/*.js').on('change', browserSync.reload)
 }))
 
 module.serve = gulp.series('serve')
