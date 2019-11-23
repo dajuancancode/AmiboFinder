@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+
 $amiibo-red: #fd0015;
 $amiibo-green:#9dc900;
 $amiibo-blue: #02abee;
@@ -9,4 +11,6 @@ $breakpoints: (
   'small': 320px,
   'medium': 768px,
   'large': 1024px,
-)
+);
+
+$source-sans-pro: 'Source Sans Pro', sans-serif;
