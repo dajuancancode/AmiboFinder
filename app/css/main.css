@@ -113,8 +113,15 @@ body {
           font-size: 4rem;
           line-height: 4rem; } }
 
-.bg {
-  width: 150px;
-  height: 150px; }
-  .bg img {
-    width: 100%; }
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 1rem; }
+  .main-content .card .card-content {
+    font-size: 1rem;
+    font-weight: 300; }
+    .main-content .card .card-content .card-header {
+      padding: 0.31rem; }
+    .main-content .card .card-content .card-body {
+      padding: 0.31rem; }
