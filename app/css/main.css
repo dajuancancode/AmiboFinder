@@ -104,13 +104,13 @@ body {
       .main-header .navbar {
         grid-area: 1 / 4 / 1 / 10; }
         .main-header .navbar .logo {
-          font-size: 3rem; }
+          font-size: 2.5rem; }
         .main-header .navbar .navigation-container .navigation li a {
           font-size: 2rem; }
       .main-header .header-content {
         grid-area: 2 / 4 / 3 / 10; }
         .main-header .header-content .copy-content {
-          font-size: 4rem;
+          font-size: 3rem;
           line-height: 4rem; } }
 
 .main-content {
@@ -122,6 +122,8 @@ body {
     font-size: 1rem;
     font-weight: 300; }
     .main-content .card .card-content .card-header {
-      padding: 0.31rem; }
+      padding: 0.63rem; }
     .main-content .card .card-content .card-body {
-      padding: 0.31rem; }
+      padding: 0.63rem; }
+  .main-content .card img {
+    padding-top: 0.63rem; }
