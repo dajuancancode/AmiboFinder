@@ -8,19 +8,24 @@
     display: flex;
     flex-direction: column;
     .card-content {
-      font-size: 1rem;
-      font-weight: 300;
-      .card-header {
-        padding: 0.63rem;
+      text-align: center;
+      .card-header{
+        font-weight: 600;
+        font-size: 1.3rem;
       }
       .card-body {
-        padding: 0.63rem;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.6rem;
+        font-size: 1rem;
+        font-weight: 300;
       }
     }
     .card-image {
       width: 332px;
       height: 332px;
       background-size: cover;
+      margin: 0 auto;
     }
     .Ridley {
       background: url('../../images/Ridley-Mobile.png') top center no-repeat;

@@ -17,7 +17,7 @@ body {
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Header.jpg") center center no-repeat;
   background-size: cover;
-  height: 61vh;
+  height: 45vh;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 60%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -113,6 +113,16 @@ body {
           font-size: 3rem;
           line-height: 4rem; } }
 
+.main-footer {
+  background-color: black;
+  text-align: center;
+  margin-top: 0.6rem;
+  height: 2rem; }
+  .main-footer p {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 300; }
+
 .main-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -122,16 +132,21 @@ body {
     display: flex;
     flex-direction: column; }
     .main-content .card .card-content {
-      font-size: 1rem;
-      font-weight: 300; }
+      text-align: center; }
       .main-content .card .card-content .card-header {
-        padding: 0.63rem; }
+        font-weight: 600;
+        font-size: 1.3rem; }
       .main-content .card .card-content .card-body {
-        padding: 0.63rem; }
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.6rem;
+        font-size: 1rem;
+        font-weight: 300; }
     .main-content .card .card-image {
       width: 332px;
       height: 332px;
-      background-size: cover; }
+      background-size: cover;
+      margin: 0 auto; }
     .main-content .card .Ridley {
       background: url("../../images/Ridley-Mobile.png") top center no-repeat; }
     .main-content .card .Mario {
