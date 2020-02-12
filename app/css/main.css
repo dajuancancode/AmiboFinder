@@ -118,12 +118,38 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 1rem; }
-  .main-content .card .card-content {
-    font-size: 1rem;
-    font-weight: 300; }
-    .main-content .card .card-content .card-header {
-      padding: 0.63rem; }
-    .main-content .card .card-content .card-body {
-      padding: 0.63rem; }
-  .main-content .card img {
-    padding-top: 0.63rem; }
+  .main-content .card {
+    display: flex;
+    flex-direction: column; }
+    .main-content .card .card-content {
+      font-size: 1rem;
+      font-weight: 300; }
+      .main-content .card .card-content .card-header {
+        padding: 0.63rem; }
+      .main-content .card .card-content .card-body {
+        padding: 0.63rem; }
+    .main-content .card .card-image {
+      width: 332px;
+      height: 332px;
+      background-size: cover; }
+    .main-content .card .Ridley {
+      background: url("../../images/Ridley-Mobile.png") top center no-repeat; }
+    .main-content .card .Mario {
+      background: url("../../images/Mario-Mobile.png") top center no-repeat; }
+    .main-content .card .ROB {
+      background: url("../../images/ROB-Mobile.png") top center no-repeat; }
+    @media (min-width: 768px) {
+      .main-content .card {
+        flex-direction: row; }
+        .main-content .card .card-content {
+          flex-grow: 1; }
+          .main-content .card .card-content .card-header {
+            font-size: 1.5rem; }
+          .main-content .card .card-content .card-body {
+            font-size: 1.2rem; }
+        .main-content .card .card-image {
+          flex-grow: 2;
+          flex-basis: 100%; } }
+  @media (min-width: 768px) {
+    .main-content .card2 {
+      flex-direction: row-reverse; } }

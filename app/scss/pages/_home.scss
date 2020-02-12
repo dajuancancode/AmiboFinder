@@ -5,6 +5,8 @@
   grid-row-gap: 1rem;
 
   .card {
+    display: flex;
+    flex-direction: column;
     .card-content {
       font-size: 1rem;
       font-weight: 300;
@@ -15,8 +17,42 @@
         padding: 0.63rem;
       }
     }
-    img {
-      padding-top: 0.63rem;
+    .card-image {
+      width: 332px;
+      height: 332px;
+      background-size: cover;
+    }
+    .Ridley {
+      background: url('../../images/Ridley-Mobile.png') top center no-repeat;
+    }
+    .Mario {
+      background: url('../../images/Mario-Mobile.png') top center no-repeat;
+    }
+    .ROB {
+      background: url('../../images/ROB-Mobile.png') top center no-repeat;
+    }
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      .card-content {
+        flex-grow: 1;
+        .card-header {
+          font-size: 1.5rem;
+        }
+        .card-body {
+          font-size: 1.2rem;
+        }
+      }
+      .card-image {
+        flex-grow: 2;
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  @media(min-width: 768px) {
+    .card2 {
+      flex-direction: row-reverse;
     }
   }
 }
