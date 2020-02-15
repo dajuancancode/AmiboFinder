@@ -1,8 +1,12 @@
 .main-footer{
-  background-color: black;
+  background-color: $amiibo-darkGreen;
   text-align: center;
-  margin-top: 0.6rem;
-  height: 2rem;
+  grid-column:  1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   p {
     font-size: 1.3rem;
     color: white;

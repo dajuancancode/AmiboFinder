@@ -1,0 +1,15 @@
+.application-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr;
+  flex: 1;
+  grid-row-gap: 1rem;
+
+  .form{
+    justify-content: center;
+    input[type="submit"] {
+      padding: 10px 25px;
+      border-radius: 10px;
+    }
+  }
+}

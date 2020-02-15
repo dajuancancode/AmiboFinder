@@ -3,6 +3,8 @@
               url('../../images/Header.jpg') center center no-repeat;
   background-size: cover;
   height: 45vh;
+  grid-column:  1 / 2;
+  grid-row: 1 / 2;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 60%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
