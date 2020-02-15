@@ -181,13 +181,32 @@ body {
       flex-direction: row-reverse; } }
 
 .application-content {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3rem 1fr;
+  grid-template-rows: 15% 1fr;
   flex: 1;
   grid-row-gap: 1rem; }
   .application-content .form {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    display: flex;
     justify-content: center; }
+    .application-content .form input[type="text"] {
+      width: 65%;
+      height: 2.5rem;
+      border-radius: 0.8rem;
+      border: 2px solid black;
+      padding: 10px;
+      font-size: 1.12rem; }
     .application-content .form input[type="submit"] {
-      padding: 10px 25px;
-      border-radius: 10px; }
+      padding: 10px 24px;
+      border-radius: 0.8rem;
+      border: 1px solid transparent;
+      background-color: #00825e;
+      font-size: 1.12rem;
+      color: #fff; }
