@@ -3,11 +3,11 @@
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 1fr;
+  grid-template-rows: 3.5rem 1fr;
   flex: 1;
   grid-row-gap: 1rem;
 
-  .form{
+  .form-div{
     justify-self: center;
     align-self: center;
     grid-column: 1/2;
@@ -30,6 +30,15 @@
       background-color: $amiibo-darkGreen;
       font-size: 1.12rem;
       color: #fff; 
+    }
+  }
+
+  .amiibo-section {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    .amiibo-image {
+      max-width: 134px;
     }
   }
 }
